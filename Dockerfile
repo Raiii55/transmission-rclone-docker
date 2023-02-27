@@ -11,7 +11,6 @@ RUN sed -i 's/^    "script-torrent-done-filename": ""/    "script-torrent-done-f
 # docker run --name transclone \
 #   -it --rm \
 #   -p 19092:9091 \
-#   -v $HOME/.config/rclone:/rclone \
 #   -e RCLONE_REMOTE=gdrive:torrent \
 #   -v /etc/secrets/:/rclone \
 #   transmission-rclone bash
