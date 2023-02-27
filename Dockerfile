@@ -1,7 +1,7 @@
 FROM linuxserver/transmission
 
 RUN apk add --no-cache bash python3
-RUN curl https://rclone.org/install.sh |   mandb/# /'  | bash
+RUN curl https://rclone.org/install.sh | bash
 COPY on_download_finish.sh /on_download_finish.sh
 COPY remove_until_size.py /remove_until_size.py
 RUN chmod +x on_download_finish.sh
